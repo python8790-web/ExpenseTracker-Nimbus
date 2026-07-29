@@ -1,0 +1,9 @@
+# Railway configuration for Expense Tracker Backend
+[build]
+builder = "nixpacks"
+
+[env]
+PORT = "3000"
+NODE_ENV = "production"
+JWT_SECRET = "${{ secrets.JWT_SECRET }}"
+DATABASE_URL = "${{ services.postgres.connectionString }}"
