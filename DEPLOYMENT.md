@@ -94,7 +94,7 @@ Copy this URL - you'll need it for the frontend.
 In Vercel deployment settings, add:
 
 ```
-VITE_API_URL=https://your-railway-backend-url.railway.app
+VITE_API_URL=https://angelic-abundance-production-26da.up.railway.app/api
 ```
 
 Replace with your actual Railway backend URL from Part 2.

@@ -35,7 +35,7 @@ ExpenseTracker/
 cd server
 npm install
 npx prisma migrate dev --name init   # creates prisma/dev.db and all tables
-npm run dev                          # starts on http://localhost:5000
+npm run dev                          # starts on import.meta.env.VITE_API_URL,
 ```
 
 `server/.env` already contains a working config:
@@ -55,7 +55,7 @@ In a second terminal:
 ```bash
 cd client
 npm install
-npm run dev     # starts on http://localhost:5173
+npm run dev     # starts on import.meta.env.VITE_API_URL,
 ```
 
 Open the printed URL in your browser. Register an account, log in, and you're in.
@@ -73,7 +73,7 @@ Both platforms offer free tiers and handle everything automatically.
 - When you register, six starter categories (Food, Transport, Shopping, Bills,
   Entertainment, Other) are created automatically for your account — you can
   rename, recolor, or delete them from the "Manage" link on the dashboard.
-- The frontend talks to the backend at `http://localhost:5000/api`
+- The frontend talks to the backend at `import.meta.env.VITE_API_URL`
   (see `client/src/api/axios.ts`) — update that if you deploy the API elsewhere.
 - To reset your data, stop the server and delete `server/prisma/dev.db`, then
   run `npx prisma migrate dev` again.
