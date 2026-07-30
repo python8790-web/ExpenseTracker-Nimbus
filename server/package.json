@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Expense Tracker Backend",
   "main": "src/server.js",
-  "scripts": {
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
-    "build": "prisma generate && prisma db push",
-    "postinstall": "prisma generate"
-  },
+"scripts": {
+  "dev": "nodemon src/server.js",
+  "start": "node src/server.js",
+  "build": "prisma generate && prisma db push",
+  "postinstall": "prisma generate"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
